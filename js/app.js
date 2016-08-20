@@ -145,7 +145,7 @@ function contactDetail(index){
 
 	/* -- show list of phone number -- */
 	for(var i=0;i<list[index].phoneNumber.length;i++){
-		$(".phone-number").append('Phone Number ('+i+') '+list[index].phoneNumber[i]+'<br>');
+		$(".phone-number").append('Phone Number ('+(i+1)+') '+list[index].phoneNumber[i]+'<br>');
 	}
 	
 	/* -- show list address -- */
