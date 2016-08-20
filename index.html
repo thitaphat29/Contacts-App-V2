@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts Application</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  	<!-- Bootstrap -->
+  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	
+  	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+	<h1>Contacts</h1>
+
+	<section class="row">
+		<main class="col-md-7 add-contact">
+			<h3>Add a contact:</h3>
+			<form id="contactForm">
+				  <div class="form-group">
+    				<label for="firstName">First Name</label>
+    				<input type="text" class="form-control" id="firstName" required="">
+  				</div>
+
+  				<div class="form-group">
+    				<label for="lastName">Last Name</label>
+   					<input type="text" class="form-control" id="lastName" required="">
+  				</div>
+
+          <div class="form-phone-number">
+    				<div class="form-group">
+      				<label for="phoneNumber">Phone Number</label>
+              <button class="btn btn-primary btn-phone">Add Phone Number</button>
+     					<input type="text" class="form-control input-phone" name="phoneNumber" required="">
+    				</div>
+          </div>
+
+          <div class="form-address">
+    				<div class="form-group">
+      				<label for="street">Street</label>
+     					 <input type="text" class="form-control input-street" name="street">
+      				<label for="city">City</label>
+     					 <input type="text" class="form-control input-city" name="city">
+      				<label for="state">State</label>
+     					 <input type="text" class="form-control input-state" name="state">
+    				</div>
+          </div>
+          <button type="button" class="btn btn-primary btn-address">Add Address</button>
+          <input type="submit" id="btn-submit" class="btn btn-default" name="submit" value="Add Contact"/>
+  		</form>
+		</main>
+
+		<aside class="col-md-5 contact-detail">
+			<h3>Nextdoor Neighbor</h3>
+			<p class="firstname"></p>
+			<p class="lastname"></p>
+			<p class="phone-number"></p>
+			<div class="address">
+				<ul>
+				
+				</ul>
+			</div>
+		</aside>
+	</section>
+
+	<section class="row contact-list">
+		<div class="col-md-7">
+			<h3>Contacts:</h3>
+			<ul>
+			</ul>
+		</div>
+	</section>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

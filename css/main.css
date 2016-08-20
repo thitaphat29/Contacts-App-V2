@@ -1,0 +1,28 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	height: 800px;
+	padding: 30px 50px;
+}
+.form-phone-number button{
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.form-phone-number input{
+	margin-bottom: 15px;
+}
+
+form #btn-submit{
+	margin-left: 5px;
+}
+
+.form-address{
+	padding-bottom: 15px;
+}
